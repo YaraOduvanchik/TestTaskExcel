@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Главная страница";
+}
+
+<div class="container text-center mt-5">
+    <h1 class="mb-4">Архивы погоды Москвы</h1>
+    
+    <div class="list-group">
+        <a href="@Url.Action("Index", "Weather")" class="list-group-item list-group-item-action">
+            📂 Просмотр архивов погодных условий
+        </a>
+        <a href="@Url.Action("Upload", "Weather")" class="list-group-item list-group-item-action">
+            📤 Загрузка архивов погодных условий
+        </a>
+    </div>
+</div>
